@@ -1,0 +1,21 @@
+<DOCTYPE html>
+    <html xmlns:th="http://www.thymeleaf.org" >
+    <head>
+    <meta  charset="UTF-8">
+    <title>inicio demo </title>
+    </head>
+    <body>
+        <!--
+    HOLA ESTA ES UNA PRUEBA
+    <h1 th:text=${mensajeinicio}>  </h1> 
+    <h2 >hoy es [[${fecha}]]</h2>
+-->
+<h1>demo de renderizado desde controlador</h1>
+<h1>oferta de trabajo </h1>
+<!-- renderizado desde controlador  cuidado con los espacios  -->
+<h3 th:text="'Titulo : ' + ${nombre}"> </h3>  
+<h3 th:text="'Fecha pub : ' + ${fecha}"> </h3>
+<h3 th:text="'Salario Ofrecido : ' + ${salario}"> </h3>
+<h3 th:text="'Vigente : ' + ${vigente}"> </h3>       
+</body>
+    </html>

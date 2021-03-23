@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!-- llamado del namespace llamado de thymelaf-->
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>LISTADO</title>
+</head>
+<body>
+<!-- renderizado de each este bloque se renderiza n veces dependiendo de los caracteres de la lista   -->
+<tr th:each="tmpEmp: ${empleos}"> <!-- tmpEmp es una variable temporal que se declara para reciboir los datos del arreglo o lista -->
+<td th:text="${tmpEmp}" >vancante</td>    
+</tr>
+<ol><!--  -->
+    <li th:each="tmpEmp:${empleos}" th:text="${tmpEmp}" ></li>
+</ol>
+</body>
+
+</html>
